@@ -1,6 +1,6 @@
 # Widepaycash SMS Notification Channel
 
-This package makes it easy to send notifications using [Widepaycash SMS](https://firebase.google.com/docs/cloud-messaging/) notifications the laravel way
+This package makes it easy to send notifications using [Widepaycash SMS](https://widepaycash.com) API the laravel way
 
 ## Contents
 
