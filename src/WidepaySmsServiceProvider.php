@@ -4,7 +4,7 @@ namespace NotificationChannels\WidepaySms;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
-use Kgoofori\WidepaySms\WidepaySmsChannel;
+use NotificationChannels\WidepaySms\WidepaySmsChannel;
 
 class WidepaySmsServiceProvider extends ServiceProvider
 {

@@ -3,7 +3,7 @@
 namespace NotificationChannels\WidepaySms;
 
 use Illuminate\Notifications\Notification;
-use App\Channels\Exceptions\CouldNotSendNotification;
+use NotificationChannels\Fcm\Exceptions\CouldNotSendNotification;
 
 class WidepaySmsChannel
 {
@@ -15,7 +15,7 @@ class WidepaySmsChannel
      * @param mixed $notifiable
      * @param \Illuminate\Notifications\Notification $notification
      *
-     * @throws \Kgoofori\WidepaySms\Exceptions\CouldNotSendNotification
+     * @throws \NotificationChannels\Fcm\Exceptions\CouldNotSendNotification
      */
     public function send($notifiable, Notification $notification)
     {
