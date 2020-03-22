@@ -2,9 +2,7 @@
 
 namespace NotificationChannels\WidepaySms;
 
-use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
-use NotificationChannels\WidepaySms\WidepaySmsChannel;
 
 class WidepaySmsServiceProvider extends ServiceProvider
 {
