@@ -11,7 +11,6 @@ This package makes it easy to send notifications using [Widepaycash SMS](https:/
 - [Changelog](#changelog)
 - [Testing](#testing)
 - [Security](#security)
-- [Contributing](#contributing)
 - [Credits](#credits)
 - [License](#license)
 
