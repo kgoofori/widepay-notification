@@ -1,6 +1,6 @@
 {
     "name": "kgoofori/widepay-sms-notification",
-    "description": "This package makes it easy to send notifications using Widepaycash SMS API the laravel way",
+    "description": "This package makes it easy to send SMS notifications using Widepaycash SMS API the laravel way",
     "homepage": "https://github.com/kgoofori/widepay-sms-notification.git",
     "license": "MIT",
     "authors": [

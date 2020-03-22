@@ -1,6 +1,6 @@
 # Widepaycash SMS Notification Channel
 
-This package makes it easy to send notifications using [Widepaycash SMS](https://widepaycash.com) API the laravel way
+This package makes it easy to send SMS notifications using [Widepaycash SMS](https://widepaycash.com) API the laravel way
 
 ## Contents
 
@@ -43,7 +43,7 @@ Once you've registered and generated ypu API id and key, add the API id and key 
 
 ## Usage
 
-You can now send notifications via FCM by creating an `FcmNotification` and an `FcmMessages`:
+You can now send SMS notifications via Widepay API by creating a `WidepaySmsMessage`:
 
 ```php
 ...
