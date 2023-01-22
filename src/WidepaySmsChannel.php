@@ -4,6 +4,7 @@ namespace NotificationChannels\WidepaySms;
 
 use Illuminate\Notifications\Notification;
 use NotificationChannels\Fcm\Exceptions\CouldNotSendNotification;
+use Illuminate\Support\Facades\Http;
 
 class WidepaySmsChannel
 {
@@ -35,12 +36,9 @@ class WidepaySmsChannel
         }
 
         try {
-            (new \GuzzleHttp\Client())
-                ->request('POST', static::DEFAULT_SMS_URL, [
-                    'headers' => ['Content-Type' => 'application/json', 'Accept' => 'application/json',],
-                    'body' => $message->toJson(),
-                    'verify' => false,
-                ]);
+
+            Http::post(static::DEFAULT_SMS_URL, $message->toArray())->throw();
+
         } catch (RequestException $requestException) {
             throw CouldNotSendNotification::serviceRespondedWithAnError($requestException);
         }
